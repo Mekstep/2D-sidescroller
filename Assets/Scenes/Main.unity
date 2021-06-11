@@ -121,6 +121,36 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &245661058
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245661059}
+  m_Layer: 0
+  m_Name: Attack1Position
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &245661059
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245661058}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.36, y: -0.21, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1122940394}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &334804697
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +732,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1122940394}
   - component: {fileID: 1122940396}
+  - component: {fileID: 1122940398}
   - component: {fileID: 1122940393}
   - component: {fileID: 1122940392}
   - component: {fileID: 1122940395}
@@ -799,6 +830,7 @@ Transform:
   - {fileID: 1603253838}
   - {fileID: 2115535595}
   - {fileID: 1742760629}
+  - {fileID: 245661059}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -889,6 +921,26 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1122940398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1122940391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 353a35493329df94cb84149a1b3a154a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  combatEnabled: 1
+  inputTimer: 0.2
+  attack1Radius: 0.8
+  attack1Damage: 10
+  attack1HitBoxPos: {fileID: 245661059}
+  whatIsDamageable:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1487560904
 GameObject:
   m_ObjectHideFlags: 0
