@@ -236,7 +236,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410198358}
   m_Layer: 9
-  m_Name: GroundCheck
+  m_Name: LedgeCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -823,35 +823,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 966808305}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4db87cfa3454cd4ea8ca21f4617aa23, type: 3}
+  m_Script: {fileID: 11500000, guid: 3121a85ecad19f34ca083943a14e26dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheckDistance: 0.5
-  wallCheckDistance: 0.1
-  movementSpeed: 3
-  maxHealth: 30
-  knockbackDuration: 0.1
-  lastTouchDamageTime: 0
-  touchDamageCooldown: 0.2
-  touchDamage: 10
-  touchDamageWidth: 1.5
-  touchDamageHeight: 0.9
-  groundCheck: {fileID: 410198358}
+  entityData: {fileID: 11400000, guid: 706a6f6783d5396468f7d3705b1d0afc, type: 2}
   wallCheck: {fileID: 1673678137}
-  touchDamageCheck: {fileID: 352567643}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 256
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 2048
-  knockbackSpeed: {x: 10, y: 5}
-  hitParticle: {fileID: 5583402382604899919, guid: 797fd8a0b4386c547a3e08ab7ef3e169,
-    type: 3}
-  deathChunkParticle: {fileID: 2151489065145865629, guid: 37d0e80597e2ebf478ac4b8e187a2615,
-    type: 3}
-  deathBloodParticle: {fileID: 7837052809673635007, guid: db7a5c489bd69b44d8174e16dea4e835,
-    type: 3}
+  ledgeCheck: {fileID: 410198358}
+  idleStateData: {fileID: 11400000, guid: df905fb442d28474eb6e1b536887dc0e, type: 2}
+  moveStateData: {fileID: 11400000, guid: 1cdad00dabaa82446aa0954843cbc474, type: 2}
 --- !u!4 &1122940394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5075804551738100520, guid: caa3a8f68528c0943819b76dd03d8bd7,
@@ -1088,7 +1067,7 @@ SpriteRenderer:
   m_Size: {x: 4, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1550516868
@@ -40481,7 +40460,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7782485, y: 1}
+    m_SensorSize: {x: 1.7769231, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
