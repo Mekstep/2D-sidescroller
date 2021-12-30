@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7ea0cf26816c3f4c92db0b0d1eba122, type: 3}
-  m_Name: newPlayerDetectedStateData
+  m_Name: E1_PlayerDetectedData
   m_EditorClassIdentifier: 

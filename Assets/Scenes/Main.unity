@@ -829,8 +829,10 @@ MonoBehaviour:
   entityData: {fileID: 11400000, guid: 706a6f6783d5396468f7d3705b1d0afc, type: 2}
   wallCheck: {fileID: 1673678137}
   ledgeCheck: {fileID: 410198358}
+  playerCheck: {fileID: 2001733806}
   idleStateData: {fileID: 11400000, guid: df905fb442d28474eb6e1b536887dc0e, type: 2}
   moveStateData: {fileID: 11400000, guid: 1cdad00dabaa82446aa0954843cbc474, type: 2}
+  playerDetectedData: {fileID: 11400000, guid: f457439581fb8be4397b947b7de653bb, type: 2}
 --- !u!4 &1122940394 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5075804551738100520, guid: caa3a8f68528c0943819b76dd03d8bd7,
@@ -950,6 +952,7 @@ Transform:
   - {fileID: 410198358}
   - {fileID: 1673678137}
   - {fileID: 352567643}
+  - {fileID: 2001733806}
   m_Father: {fileID: 966808306}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -40460,7 +40463,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7769231, y: 1}
+    m_SensorSize: {x: 1.7782485, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -40469,6 +40472,36 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 2122837774}
+--- !u!1 &2001733805
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001733806}
+  m_Layer: 9
+  m_Name: PlayerCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001733806
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001733805}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.197, y: -0.449, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1545466181}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2122837773
 GameObject:
   m_ObjectHideFlags: 3
