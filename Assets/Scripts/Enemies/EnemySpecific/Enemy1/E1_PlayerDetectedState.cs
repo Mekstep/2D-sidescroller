@@ -24,7 +24,11 @@ public class E1_PlayerDetectedState : PlayerDetectedState
     {
         base.LogicUpdate();
 
-        if (performLongRangeAction)
+        if (performCloseRangeAction)
+        {
+            stateMachine.ChangeState(enemy.meleeAttackState);
+        }
+        else if (performLongRangeAction)
         {
             stateMachine.ChangeState(enemy.chargeState);
         }
@@ -32,7 +36,11 @@ public class E1_PlayerDetectedState : PlayerDetectedState
         {
             stateMachine.ChangeState(enemy.lookForPlayerState);
         }
+
+
+        //TODO: Transition to attack state
     }
+
 
     public override void PhysicsUpdate()
     {
