@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 23e82100c45b3c44cbc8b10546e1a44c, type: 3}
-  m_Name: newLookForPlayerStateData
+  m_Name: E1_LookForPlayerData
   m_EditorClassIdentifier: 
   amountOfTurns: 2
   timeBetweenTurns: 0.75

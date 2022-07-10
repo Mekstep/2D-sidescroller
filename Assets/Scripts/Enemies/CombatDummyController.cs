@@ -47,11 +47,11 @@ public class CombatDummyController : MonoBehaviour
         CheckKnockback();
     }
 
-    private void Damage(float[] attackDetails)
+    private void Damage(AttackDetails details)
     {
-        currentHealth -= attackDetails[0];
+        currentHealth -= details.damageAmount;
 
-        if(attackDetails[1] < aliveGO.transform.position.x)
+        if(details.position.x < aliveGO.transform.position.x)
         {
             playerFacingDirection = 1;
         }
