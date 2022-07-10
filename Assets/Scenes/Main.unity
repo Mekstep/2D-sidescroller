@@ -165,7 +165,11 @@ MonoBehaviour:
     type: 2}
   stunStateData: {fileID: 11400000, guid: 2f89ca8491febb244a4c367568c798b0, type: 2}
   deadStateData: {fileID: 11400000, guid: d5e28893c707a6b4ea2bd9ddf1e487cd, type: 2}
+  dodgeStateData: {fileID: 11400000, guid: ea5092d3f8ff4384bab38717aa59c1cd, type: 2}
+  rangedAttackStateData: {fileID: 11400000, guid: 7726423122bcce542bb4683458e21019,
+    type: 2}
   meleeAttackPosition: {fileID: 674789875}
+  rangedAttackPosition: {fileID: 528347751}
 --- !u!4 &139485533
 Transform:
   m_ObjectHideFlags: 0
@@ -871,6 +875,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1487560905}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &528347750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 528347751}
+  m_Layer: 9
+  m_Name: RangedAttackPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &528347751
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528347750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2041318277}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &674789874
 GameObject:
@@ -40813,6 +40847,7 @@ Transform:
   - {fileID: 878206522}
   - {fileID: 361254334}
   - {fileID: 674789875}
+  - {fileID: 528347751}
   m_Father: {fileID: 139485533}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

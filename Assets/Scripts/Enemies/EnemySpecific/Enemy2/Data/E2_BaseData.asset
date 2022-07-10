@@ -21,7 +21,7 @@ MonoBehaviour:
   maxAggroDistance: 4
   stunResistance: 3
   stunRecoveryTime: 2
-  closeRangeActionDistance: 1
+  closeRangeActionDistance: 1.3
   hitParticle: {fileID: 5583402382604899919, guid: 797fd8a0b4386c547a3e08ab7ef3e169,
     type: 3}
   whatIsGround:
